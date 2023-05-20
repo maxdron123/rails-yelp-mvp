@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Add new restaurant</h1>
+<div class="form">
+<%= simple_form_for @restaurant do |f| %>
+<%=f.input :name, placeholder: 'Restaurant name' %>
+<%=f.input :address, placeholder: 'Restaurant address' %>
+<%=f.input :phone_number, placeholder: 'Restaurant phone number(optional)'  %>
+<%=f.input :category, placeholder: 'Specify category'  %>
+<%= f.submit 'Add restaurant', class:"btn, btn-success" %>
+<% end %>
+</div>
+</div>

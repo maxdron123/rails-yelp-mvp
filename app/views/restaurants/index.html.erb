@@ -1,0 +1,15 @@
+<h1>Welcome to restaurants catalogue!</h1>
+<h2>Available restaurants:</h2>
+
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+    <% @restaurants.each do |restaurant| %>
+<strong><%=restaurant.name %></strong>
+<%= link_to "View", restaurant_path(restaurant) %>
+<hr>
+<% end %>
+    </li>
+    <%= link_to "Add new restaurant", new_restaurant_path %>
+  </ul>
+</div>

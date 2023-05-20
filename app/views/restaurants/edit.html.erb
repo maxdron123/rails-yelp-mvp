@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Edit <%= @restaurant.name %></h1>
+<div class="form">
+<%= simple_form_for @restaurant do |f| %>
+<%=f.input :name %>
+<%=f.input :address %>
+<%=f.input :phone_number  %>
+<%=f.input :category %>
+<%= f.submit 'Save changes', class:"btn, btn-success" %>
+<% end %>
+</div>
