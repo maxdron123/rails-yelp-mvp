@@ -13,7 +13,7 @@ category = %w[chinese italian japanese french belgian]
     Restaurant.create(
       name: Faker::Restaurant.name,
       address: Faker::Address.street_address,
-      phone_number: Faker::PhoneNumber.phone_number.to_i,
+      phone_number: Faker::PhoneNumber.cell_phone,
       category: category.sample
     )
   restaurant.save
